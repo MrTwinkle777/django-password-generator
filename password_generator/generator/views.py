@@ -22,7 +22,7 @@ def password(request):
     if request.GET.get('numbers'):
         characters_list.extend(numbers_list)
 
-    length = int(request.GET.get('length', 10))
+    length = int(request.GET.get('length', 8))
 
     the_password = ''
     for x in range(length):
